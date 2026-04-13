@@ -5,7 +5,7 @@ nginx:
     type: NodePort
     port: 80
     targetPort: 80
-    nodePort: 30080
+    nodePort: 30082
 
 apache:
   image: httpd:2.4
