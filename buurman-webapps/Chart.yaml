@@ -1,6 +1,0 @@
-apiVersion: v2
-name: buurman-webapps
-description: Helm chart voor NGINX en Apache webapps
-type: application
-version: 0.1.0
-appVersion: "1.0"
