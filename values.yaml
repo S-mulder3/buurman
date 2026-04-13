@@ -1,0 +1,22 @@
+nginx:
+  replicas: 2
+  image: nginx:stable
+  service:
+    type: NodePort
+    port: 80
+    targetPort: 80
+    nodePort: 30080
+
+apache:
+  image: httpd:2.4
+  service:
+    port: 80
+    targetPort: 80
+
+apache1:
+  replicas: 1
+  message: "Apache server 1"
+
+apache2:
+  replicas: 1
+  message: "Apache server 2"
